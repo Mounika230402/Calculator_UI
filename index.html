@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @media  screen and (max-width:320px) and (min-width:200px) {
+            .main{
+                width:100%;
+                height:100%;
+                gap:10px;
+            }
+            .button{
+                height:20px;
+                width:40px;
+                font-size: 12px;
+                border-radius: 10px;
+
+            }
+            .equal{
+                width:40px;
+                height:55px;
+                font-size: 12px;
+                border-radius: 10px;
+            }
+        }
+        @media  screen and (min-width:321px) and (max-width:450px) {
+            .main{
+                width:100%;
+                height:100%;
+            }
+            .button{
+                height:25px;
+                width:45px;
+                font-size: 15px;
+                border-radius: 12px;
+            }
+            .equal{
+                width:45px;
+                height:60px;
+                font-size: 15px;
+                border-radius: 12px;
+            }
+        }
+        @media  screen and (min-width:451px) and (max-width:570px) {
+            .main{
+                width:100%;
+                height:100%;
+            }
+            .button{
+                height:35px;
+                width:55px;
+                font-size: 25px;
+                border-radius: 17px;
+            }
+            .equal{
+                width:55px;
+                height:70px;
+                font-size: 25px;
+                border-radius: 17px;
+            }
+        }
+        @media  screen and (min-width:571px) and (max-width:750px) {
+            .main{
+                width:100%;
+                height:100%;
+            }
+            .button{
+                height:50px;
+                width:70px;
+                font-size: 30px;
+                border-radius: 20px;
+            }
+            .equal{
+                width:70px;
+                height:115px;
+                font-size: 30px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="screen">0</div>
+        <div class="buttons">
+            <div class="r1"> 
+                <button class="button">MRC</button>
+                <button class="button">7</button>
+                <button class="button">4</button>
+                <button class="button">1</button>
+                <button class="button">0</button>
+            </div>
+            <div class="r1">
+                <button class="button">M-</button>
+                <button class="button">8</button>
+                <button class="button">5</button>
+                <button class="button">2</button>
+                <button class="button">00</button>
+            </div>
+            <div class="r1">
+                <button class="button">M+</button>
+                <button class="button">9</button>
+                <button class="button">6</button>
+                <button class="button">3</button>
+                <button class="button">.</button>
+            </div>
+            <div class="r1">
+                <button class="button">CLR</button>
+                <button class="button">%</button>
+                <button class="button">+</button>
+                <button class="button">*</button>
+                <button class="button">-</button>
+            </div>
+            <div class="r1">
+                <button class="button">ON</button>
+                <button class="button">^</button>
+                <button class="button">/</button>
+                <button class="equal">=</button>
+            </div>
+    </div>
+</body>
+</html>
