@@ -17,7 +17,7 @@ body{
     gap:20px;
     border-radius: 20px;
 }
-.screen{
+#result{
     height: 15%;
     width:96%;
     background-color: rgb(171, 206, 237);

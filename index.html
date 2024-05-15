@@ -84,42 +84,68 @@
 </head>
 <body>
     <div class="main">
-        <div class="screen">0</div>
+        <input type="text" id="result" placeholder="0">
         <div class="buttons">
             <div class="r1"> 
-                <button class="button">MRC</button>
-                <button class="button">7</button>
-                <button class="button">4</button>
-                <button class="button">1</button>
-                <button class="button">0</button>
+                <button class="button" onclick="recall()">MRC</button>
+                <button class="button" onclick="display('7')">7</button>
+                <button class="button" onclick="display('4')">4</button>
+                <button class="button" onclick="display('1')">1</button>
+                <button class="button" onclick="display('0')">0</button>
             </div>
             <div class="r1">
-                <button class="button">M-</button>
-                <button class="button">8</button>
-                <button class="button">5</button>
-                <button class="button">2</button>
-                <button class="button">00</button>
+                <button class="button" onclick="decrement()">M-</button>
+                <button class="button" onclick="display('8')">8</button>
+                <button class="button" onclick="display('5')">5</button>
+                <button class="button" onclick="display('2')">2</button>
+                <button class="button" onclick="display('00')">00</button>
             </div>
             <div class="r1">
-                <button class="button">M+</button>
-                <button class="button">9</button>
-                <button class="button">6</button>
-                <button class="button">3</button>
-                <button class="button">.</button>
+                <button class="button" onclick="increment()">M+</button>
+                <button class="button" onclick="display('9')">9</button>
+                <button class="button" onclick="display('6')">6</button>
+                <button class="button" onclick="display('3')">3</button>
+                <button class="button" onclick="display('.')">.</button>
             </div>
             <div class="r1">
-                <button class="button">CLR</button>
-                <button class="button">%</button>
-                <button class="button">+</button>
-                <button class="button">*</button>
-                <button class="button">-</button>
+                <button class="button" onclick="clr()">CLR</button>
+                <button class="button" onclick="display('%')">%</button>
+                <button class="button" onclick="display('+')">+</button>
+                <button class="button" onclick="display('*')">*</button>
+                <button class="button" onclick="display('-')">-</button>
             </div>
             <div class="r1">
-                <button class="button">ON</button>
-                <button class="button">^</button>
-                <button class="button">/</button>
-                <button class="equal">=</button>
+                <button class="button" onclick="display('√')">√x</button>
+                <button class="button" onclick="display('^')">^</button>
+                <button class="button" onclick="display('/')">/</button>
+                <button class="equal" onclick="equate()">=</button>
             </div>
     </div>
+    <script>
+        let getBtn1=document.querySelectorAll(".button")
+        let result=0
+        function recall(){
+            document.getElementById("result").value=result
+        }
+        function increment(){
+            ++document.getElementById("result").value
+        }
+        function decrement(){
+            --document.getElementById("result").value
+        }
+        function display(n){
+            document.getElementById("result").value+=n
+
+        }
+        function equate(){
+            result=document.getElementById("result").value
+            let x=document.getElementById("result").value
+            let y=eval(x)
+            document.getElementById("result").value=y
+        }
+        function clr(){
+            document.getElementById("result").value=""
+        }
+    </script>
 </body>
 </html>
