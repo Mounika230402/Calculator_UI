@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(111, 244, 131);
+    /* background-color: rgb(111, 244, 131); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap:15px;
+    gap:10px;
     flex-wrap:wrap;
     margin-bottom: 20px;
 }

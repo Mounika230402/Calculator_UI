@@ -115,7 +115,7 @@
                 <button class="button" onclick="display('-')">-</button>
             </div>
             <div class="r1">
-                <button class="button" onclick="display('√')">√x</button>
+                <button class="button" onclick="del()">DEL</button>
                 <button class="button" onclick="display('^')">^</button>
                 <button class="button" onclick="display('/')">/</button>
                 <button class="equal" onclick="equate()">=</button>
@@ -145,6 +145,13 @@
         }
         function clr(){
             document.getElementById("result").value=""
+        }
+        function del(){
+            let del=document.getElementById("result").value
+            str=""
+            for(i=0;i<del.length-1;i++)
+            str+=del[i]
+            document.getElementById("result").value
         }
     </script>
 </body>
